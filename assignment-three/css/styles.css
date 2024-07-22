@@ -1,0 +1,469 @@
+:root{
+    --main-font:"Fira Sans", sans-serif;
+    --font-logo: "Merriweather", serif;
+    --bg-black: rgb(12, 12, 12);
+    --bg-white: white;
+}
+
+*{
+    font-family: var(--main-font);
+    font-family: 600;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+
+}
+body{
+    background-color: var(--bg-white);
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    max-height: 100vh;
+    box-sizing: border-box;
+}
+.container{
+    background-color: inherit;
+    width: 100%;
+
+}
+/* modal */
+.popup.close{
+    display: none;
+}
+.popup{
+    position: fixed;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 30px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    z-index: 3;
+    top: 2%;
+    left: 15%;
+    box-shadow: 0px 0px 10px rgba(71, 70, 70, 0.837) ;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    height: 550px;
+    animation: popup 1s ease-in;
+    
+}   
+
+@keyframes popup {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.pop-close{
+    width: 100%;
+    text-align: right;
+    font-weight: 700;
+     padding: 0px 30px;
+    
+}
+.pop-close p{
+    cursor: pointer;
+    margin-right: 20px;
+}
+.pop-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 20px;
+    width: 100%;
+    padding: 10px 40px;
+    
+} 
+.pop-text{
+    width: 70%;
+    height: 100%;
+    padding: 10px 30px;
+   
+}
+.pop-title{
+    font-size: 1.4rem;
+    font-family: inherit;
+    margin-bottom: 20px;
+}
+.pop-intro{
+    font-family: inherit;
+    font-weight:500;
+    margin-bottom: 20px;
+}
+.pop-text form{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.pop-text form input[type="text"],.pop-text form input[type="email"]{
+    width: 100%;
+    border: none;
+    border-bottom: 1px rgba(132, 131, 131, 0.63) solid;
+    font-family: inherit;
+    padding: 10px 10px ;
+    font-size: .8rem;
+    padding-top: 20px;
+}
+.pop-btn{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pop-yes{
+    font-family: inherit;
+    font-size: .8rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.pop-offer{
+    font-weight: 900;
+    font-family: inherit;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+.pop-link{
+
+}
+.pop-link a{
+    font-size: .8rem;
+    color: black;
+    margin-right: 20px;
+}
+.pop-text form input[type="submit"]{
+    font-family: inherit;
+    font-weight: 900;
+    border: none;
+    background-color: rgba(57, 57, 144, 0.734);
+    border-radius: 5px;
+    padding: 10px 10px;
+    color: white;
+    text-align: left;
+}
+.pop-imgs{
+    width: 30%;
+    height: 100%;
+}
+.pop-imgs img{
+    width: 100%;
+    height: 170px;
+}
+/* modal end */
+/* header */
+header{
+    position: sticky;
+    top: 0;
+}
+.head{
+    background-color: var(--bg-black);
+    padding: 20px 20px;
+    position: sticky;
+    top: 0;
+}
+
+.head a{
+    color:white;
+    font-style: none;
+    text-decoration: none;
+    font-weight: 400;
+    margin-right: 10px;
+
+}
+.head a span{
+    color:rgb(136, 136, 136);
+    
+}
+
+nav{
+    padding: 10px 10px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: top;
+    background-color: white;
+    
+}
+
+.logo{
+    padding-left: 30px;
+}
+.logo h1{
+    font-family: var(--font-logo);
+    font-weight: 500;
+    font-size: 3.5rem;
+}
+.navigations{
+    display: flex;
+    align-items: center;
+   
+    width: 70%;
+    justify-content: center;
+   
+}
+.burger{
+    display: none;
+}
+
+.burger i{
+
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    width: 100%;
+
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    font-size: none;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+ul li a:hover{
+    color: red;
+}
+/* header end */
+
+/* main */
+.container{
+
+}
+.section-title{
+    padding: 40px 20px;
+    font-weight: 400;
+
+}
+/* --------------- sale */
+.sale{
+    background-image: url('../img/fashon-banner.webp') ;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+
+}
+.sale-img{
+    display: none;
+}
+.sale-img img{
+    
+}
+.sale-content{
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.479);
+    align-self: end;
+    vertical-align: bottom;
+    padding-left: 50px;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.sale-content h1{
+    font-size: 11rem;
+    font-weight: 400;
+    color: white;
+}
+.sale-content p{
+    color: white;
+    align-self: end;
+    margin-bottom: 40px;
+    margin-left: 70px;
+    font-weight: 300;
+    font-size:1.5rem;
+}   
+
+/* ------------------ arrivals*/
+
+.arrivals{
+    
+}
+.arrivals-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+.arrivals-card{
+    width: 200px;
+    height: 300px;
+}
+
+.arrivals-card img{
+    width: 200px;
+    height: 250px;
+}
+.arrivals-card p{
+    text-align: left;
+    margin-top: 10px;
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+
+/* smile */
+.smile{
+
+}
+
+.smile-imgs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.smile-big{
+    width: 50%;
+}
+.smile-half{
+    display: none;
+}
+/* smile end */
+
+/* shop */
+.shop{
+
+}
+.shop-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    vertical-align: top;
+}
+.shop-card{
+    width: 200px;
+    vertical-align: top;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+.shop-card img{
+    width: 100%;
+    height: 250px;
+}
+.shop-card p{
+    width: 100%;
+    text-align: left;
+    padding-top: 20px;
+}
+/* shop end */
+
+/* main end */
+
+
+/* footer */
+footer{
+    width: 100%;
+    padding-top: 50px;
+}
+
+.foot-cards{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    column-gap: 20px;
+    flex-wrap: wrap;
+
+}
+.foot-card{
+    background-color: rgb(35, 35, 35);
+    border-radius: 2px;
+    padding: 10px 10px;
+}
+.foot-card p{
+    color: white;
+    font-weight: 400;
+    
+}
+
+.foot-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-top: 50px;
+    flex-wrap: wrap;  
+    row-gap: 20px;
+}
+
+.foot-row{
+    text-align: left;
+}
+.foot-row p{
+    font-weight: 500;
+    font-style: normal;
+}
+.foot-row strong{
+    font-weight: 900;
+}
+
+.copright{
+    width: 100%;
+    text-align: center;
+    background-color: var(--bg-black);
+    color: white;
+    padding: 13px 0px;
+}
+.copright a{
+    text-decoration: none;
+    color: white;
+    
+}
+.copright p{
+    font-size: .6rem;
+}
+/* footer end */
+
+
+/* privacy */
+    .privacy{
+        height: 100%;
+        padding: 20px 30px;
+        background-image: url(../img/privacy-moon-1920.webp);
+        background-size:cover;
+        background-attachment: fixed;
+        font-size: 1.5rem;
+        background-position: center;
+    }
+.privacy-text{
+    color: white;
+    width: 40%;
+}
+.privacy-btn{
+    position: fixed;
+    top: 90%;
+    right: 40px;
+}
+.privacy-btn a{
+    color: white;
+    background-color: hsl(240, 61%, 17%);
+    padding: 10px 10px;
+    border: 1px white solid;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+}
+.privacy-btn a:hover{
+    background-color: hsl(240, 61%, 30%);
+
+}
+/* privacy end */
